@@ -1,0 +1,19 @@
+yii2-docker-swarm-deployment/
+├── ansible/
+│   ├── playbook.yml
+│   ├── roles/
+│   │   ├── docker/
+│   │   │   └── tasks/main.yml
+│   │   ├── nginx/
+│   │   │   └── tasks/main.yml
+│   │   └── app/
+│   │       └── tasks/main.yml
+├── docker/
+│   └── Dockerfile
+├── docker-compose.yml
+├── nginx/
+│   └── yii2.conf
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── README.md
