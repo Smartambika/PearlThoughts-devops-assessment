@@ -1,0 +1,7 @@
+- name: Clone app repo
+  git:
+    repo: 'https://github.com/YOUR_USERNAME/YOUR_REPO.git'
+    dest: /opt/yii2app
+
+- name: Deploy stack
+  shell: docker stack deploy -c /opt/yii2app/docker-compose.yml yii2app
