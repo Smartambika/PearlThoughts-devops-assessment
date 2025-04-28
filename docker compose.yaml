@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  yii2app:
+    image: YOUR_DOCKERHUB_USERNAME/yii2app:latest
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "9000:9000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000"]
+      interval: 30s
+      retries: 3
+      timeout: 10s
