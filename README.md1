@@ -1,0 +1,13 @@
+# Yii2 Docker Swarm Deployment
+
+## Objective
+Deploy a sample Yii2 PHP app on AWS EC2 using Docker Swarm, NGINX, Ansible, and GitHub Actions for CI/CD.
+
+---
+
+## 🚀 Setup Instructions
+
+1. Launch an Ubuntu EC2 instance and SSH into it.
+2. Run the Ansible playbook:
+   ```bash
+   ansible-playbook -i <your-ec2-ip>, ansible/playbook.yml
